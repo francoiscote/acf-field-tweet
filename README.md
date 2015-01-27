@@ -6,13 +6,12 @@ An ACF custom field that gets a single Tweet Data from the twitter API from the 
 
 ### Description
 
-EXTENDED_An ACF custom field that gets a single Tweet Data from the twitter API from the tweet ID.
+An ACF custom field that gets a single Tweet Data from the twitter API from the tweet ID.
 
 ### Compatibility
 
 This ACF field type is compatible with:
 * ACF 5
-* ACF 4
 
 ### Installation
 
