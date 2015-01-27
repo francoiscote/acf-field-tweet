@@ -170,7 +170,7 @@ class acf_field_tweet extends acf_field {
 
 			// Check Transient
 			$html_transient = 'tweet-html-'.$tweet['id_str'];
-			if ( false === ( $tweet_html = get_transient( $transient_name ) ) ) {
+			if ( false === ( $tweet_html = get_transient( $html_transient ) ) ) {
 
 				require_once(dirname(__FILE__) . '/tmhOAuth.php');
 				$tmhOAuth = new tmhOAuth(array(
