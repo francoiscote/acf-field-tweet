@@ -380,15 +380,15 @@ class acf_field_tweet extends acf_field {
 	*  @return	$value
 	*/
 
-	/*
+
 
 	function load_value( $value, $post_id, $field ) {
-
+		$value['tweet_data'] = json_decode(base64_decode($value['raw_json']), true);
 		return $value;
 
 	}
 
-	*/
+
 
 
 	/*
@@ -435,7 +435,7 @@ class acf_field_tweet extends acf_field {
 			  ));
 
 				if ( $code == 200 ) {
-					$data['raw_json'] = utf8_encode($tmhOAuth->response['response']);
+					$data['raw_json'] = base64_encode($tmhOAuth->response['response']);
 				}
 
 				// Save Transient
@@ -447,9 +447,6 @@ class acf_field_tweet extends acf_field {
 			$data['raw_json'] = $tweet_raw_json;
 
 		}
-
-		// Save Array version
-		$data['tweet_data'] = json_decode($data['raw_json'], true);
 
 		return $data;
 	}
