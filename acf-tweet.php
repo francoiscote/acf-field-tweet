@@ -2,14 +2,15 @@
 
 /*
 Plugin Name: Advanced Custom Fields: Tweet
-Plugin URI: PLUGIN_URL
-Description: DESCRIPTION
+Plugin URI: https://github.com/francoiscote/acf-field-tweet
+Description: An ACF custom field that gets a single Tweet Data from the twitter API from the tweet ID.
 Version: 1.0.0
-Author: AUTHOR_NAME
-Author URI: AUTHOR_URL
+Author: François Côté
+Author URI: http://francoiscote.net
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
 
 
 
