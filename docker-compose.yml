@@ -1,0 +1,13 @@
+wordpress:  
+  image: wordpress
+  links:
+    - db:mysql
+  ports:
+    - 8080:80
+  volumes:
+    - ./:/var/www/html/wp-content/plugins/acf-field-tweet
+    - ~/code/wp-plugins/advanced-custom-fields-pro:/var/www/html/wp-content/plugins/advanced-custom-fields-pro
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: 12345

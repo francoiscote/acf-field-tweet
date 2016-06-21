@@ -4,7 +4,7 @@
 Plugin Name: Advanced Custom Fields: Tweet
 Plugin URI: https://github.com/francoiscote/acf-field-tweet
 Description: An ACF custom field that gets a single Tweet Data from the twitter API from the tweet ID.
-Version: 1.0.0
+Version: 1.0.1
 Author: François Côté
 Author URI: http://francoiscote.net
 License: GPLv2 or later
