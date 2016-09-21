@@ -431,8 +431,9 @@ class acf_field_tweet extends acf_field {
 				));
 
 				$code = $tmhOAuth->request('GET', $tmhOAuth->url('1.1/statuses/show'), array(
-			    'id' => $value
-			  ));
+					'id' => $value,
+			        	'tweet_mode' => 'extended'
+			    	));
 
 				if ( $code == 200 ) {
 					$data['raw_json'] = base64_encode($tmhOAuth->response['response']);
